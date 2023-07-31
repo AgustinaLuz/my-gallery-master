@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --font-primary: #4E5150;
+    --font-secondary: #A9A9A9;
+    --font-tertiary: #BDBDBD;
+    --background: #E5E5E5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-container {
+    padding: 4rem
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.1rem
+}
+
+.profile-info-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--font-primary);
+    margin-bottom: -10px;
+}
+
+.profile-info-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: var(--font-secondary);
+}
+
+.profile-image {
+    height: 156px;
+    width: 156px;
+    border-radius: 16px;
+}
+
+.stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dialog {
+    width: 100px;
+    height: 67px;
+    background-color: var(--background);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dialog-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--font-primary);
+}
+
+.dialog-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: var(--font-tertiary);
+}
+
+.gallery-container {
+    padding-bottom: 4rem;
+}
+
+.images-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .images-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(300px, auto);
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
+  .three {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 2/4;
+  }
+  .five {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .six {
+    grid-column: 2;
+    grid-row: 3;
+  }
